@@ -36,6 +36,15 @@
     <ClCompile Include="MainArrays1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="maxPosNegSum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nPrime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="oneTwoCount.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FunctionHeadersArrays1.h">

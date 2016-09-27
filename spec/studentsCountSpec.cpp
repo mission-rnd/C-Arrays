@@ -10,7 +10,7 @@ namespace spec
 	{
 	public:
 
-		TEST_METHOD(inValidInputCheck)
+		TEST_METHOD(SCInputCheck)
 		{
 			int lessCount, moreCount;
 			Assert::IsNull(studentsCount(NULL, 1, 1, &lessCount, &moreCount), L"Array NULL check failed.", LINE_INFO());
@@ -18,7 +18,7 @@ namespace spec
 			Assert::IsNull(studentsCount(Arr1, -2, 1, &lessCount, &moreCount), L"Length less than zero check failed.", LINE_INFO());
 		}
 		
-		TEST_METHOD(singleElement)
+		TEST_METHOD(SCsingleElement)
 		{
 			int Arr1[1] = { 1 }, lessCount, moreCount;
 			studentsCount(Arr1, 1, 1, &lessCount, &moreCount);
@@ -34,7 +34,7 @@ namespace spec
 			Assert::AreEqual(1, moreCount, L"Single element moreCount 1 case failed.", LINE_INFO());
 		}
 
-		TEST_METHOD(sameElements)
+		TEST_METHOD(SCsameElements)
 		{
 			int Arr[4] = { 12, 12, 12, 12 }, lessCount, moreCount;
 			studentsCount(Arr, 4, 12, &lessCount, &moreCount);
@@ -42,7 +42,7 @@ namespace spec
 			Assert::AreEqual(0, moreCount, L"Same elements moreCount 0 case failed.", LINE_INFO());
 		}
 
-		TEST_METHOD(differentElements)
+		TEST_METHOD(SCdifferentElements)
 		{
 			int Arr[5] = { 10, 20, 30, 40, 50 }, lessCount, moreCount;
 			studentsCount(Arr, 5, 30, &lessCount, &moreCount);

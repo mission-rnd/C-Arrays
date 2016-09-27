@@ -86,6 +86,9 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="maxPosNegSumSpec.cpp" />
+    <ClCompile Include="nPrimeSpec.cpp" />
+    <ClCompile Include="oneTwoCountSpec.cpp" />
     <ClCompile Include="removeArrayDuplicatesSpec.cpp" />
     <ClCompile Include="scoresDescendingSortSpec.cpp" />
     <ClCompile Include="sortedArrayInsertNumberSpec.cpp" />

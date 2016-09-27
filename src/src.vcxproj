@@ -12,6 +12,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MainArrays1.cpp" />
+    <ClCompile Include="maxPosNegSum.cpp" />
+    <ClCompile Include="nPrime.cpp" />
+    <ClCompile Include="oneTwoCount.cpp" />
     <ClCompile Include="studentsCount.cpp" />
     <ClCompile Include="topKStudents.cpp" />
     <ClCompile Include="scoresDescendingSort.cpp" />

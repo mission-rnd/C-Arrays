@@ -10,7 +10,7 @@ namespace spec
 	{
 	public:
 
-		TEST_METHOD(inValidInputCheck)
+		TEST_METHOD(SAPinValidInputCheck)
 		{
 			
 			Assert::IsNull(sortedArrayPositionsChange(NULL, 1), L"Array NULL check failed.", LINE_INFO());
@@ -18,7 +18,7 @@ namespace spec
 			Assert::IsNull(sortedArrayPositionsChange(Arr1, -2), L"Length less than zero check failed.", LINE_INFO());
 		}
 
-		TEST_METHOD(noValuesAreSwapped)
+		TEST_METHOD(SAPnoValuesAreSwapped)
 		{
 			int Arr[5] = { 10, 20, 30, 40, 50 };
 			sortedArrayPositionsChange(Arr, 5);
@@ -26,7 +26,7 @@ namespace spec
 			Assert::AreEqual(40, Arr[3], L"Value at index 3 should be 40", LINE_INFO());
 		}
 
-		TEST_METHOD(firstAndLastValuesAreSwapped)
+		TEST_METHOD(SAPfirstAndLastValuesAreSwapped)
 		{
 			int Arr[5] = { 50, 20, 30, 40, 10 };
 			sortedArrayPositionsChange(Arr, 5);
@@ -34,7 +34,7 @@ namespace spec
 			Assert::AreEqual(50, Arr[4], L"Value at index 4 should be 50", LINE_INFO());
 		}
 
-		TEST_METHOD(positionsChange)
+		TEST_METHOD(SAPpositionsChange)
 		{
 			int Arr[5] = { 10, 40, 30, 20, 50 };
 			sortedArrayPositionsChange(Arr, 5);

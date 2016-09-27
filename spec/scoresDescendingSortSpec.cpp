@@ -10,7 +10,7 @@ namespace spec
 	{
 	public:
 
-		TEST_METHOD(inValidInputCheck)
+		TEST_METHOD(SDinValidInputCheck)
 		{
 			
 			Assert::IsNull(scoresDescendingSort(NULL, 1), L"Array NULL check failed.", LINE_INFO());
@@ -18,14 +18,14 @@ namespace spec
 			Assert::IsNull(scoresDescendingSort(students, -2), L"Length less than zero check failed.", LINE_INFO());
 		}
 
-		TEST_METHOD(singleElement)
+		TEST_METHOD(SDsingleElement)
 		{
 			struct student students[1] = { { "stud1", 50 } };
 			scoresDescendingSort(students, 1);
 			Assert::AreEqual(50, students[0].score, L"Value at index 0 should be 50", LINE_INFO());
 		}
 
-		TEST_METHOD(sortedScores)
+		TEST_METHOD(SDsortedScores)
 		{
 			struct student students[3] = { { "stud1", 70 }, { "stud2", 60 }, { "stud3", 50 } };
 			scoresDescendingSort(students, 3);
@@ -34,7 +34,7 @@ namespace spec
 			Assert::AreEqual(50, students[2].score, L"Value at index 2 should be 50", LINE_INFO());
 		}
 
-		TEST_METHOD(sameScores)
+		TEST_METHOD(SDsameScores)
 		{
 			struct student students[3] = { { "stud1", 50 }, { "stud2", 50 }, { "stud3", 50 } };
 			scoresDescendingSort(students, 3);
@@ -43,7 +43,7 @@ namespace spec
 			Assert::AreEqual(50, students[2].score, L"Value at index 2 should be 50", LINE_INFO());
 		}
 
-		TEST_METHOD(differentScores)
+		TEST_METHOD(SDdifferentScores)
 		{
 			struct student students[3] = { { "stud1", 20 }, { "stud2", 30 }, { "stud3", 40 } };
 			scoresDescendingSort(students, 3);

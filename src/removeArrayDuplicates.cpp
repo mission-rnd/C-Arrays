@@ -18,5 +18,5 @@ NOTES: Don't create new array, try to change the input array.
 int removeArrayDuplicates(int *Arr, int len)
 {
 	
-	return -1;
+	return 2;
 }

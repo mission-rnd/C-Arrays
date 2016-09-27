@@ -40,7 +40,7 @@ namespace spec
 			return true;
 		}
 
-		TEST_METHOD(negativeKValue)
+		TEST_METHOD(TKnegativeKValue)
 		{
 			struct student students[3] = { { "stud1", 70 }, { "stud2", 60 }, { "stud3", 50 } };
 			struct student **result = topKStudents(students, 3, -3);
@@ -51,7 +51,7 @@ namespace spec
 			Assert::AreEqual(true, isValid, L"Negative K value case failed.", LINE_INFO());
 		}
 
-		TEST_METHOD(zeroKValue)
+		TEST_METHOD(TKzeroKValue)
 		{
 			struct student students[3] = { { "stud1", 70 }, { "stud2", 60 }, { "stud3", 50 } };
 			struct student **result = topKStudents(students, 3, 0);
@@ -62,7 +62,7 @@ namespace spec
 			Assert::AreEqual(true, isValid, L"K value zero case failed.", LINE_INFO());
 		}
 
-		TEST_METHOD(KGreaterThanLength)
+		TEST_METHOD(TKGreaterThanLength)
 		{
 			struct student students[3] = { { "stud1", 60 }, { "stud2", 70 }, { "stud3", 50 } };
 			struct student **result = topKStudents(students, 3, 5);
@@ -70,7 +70,7 @@ namespace spec
 			Assert::IsTrue(validate(exp, 3, result), L"K greater than length case failed.", LINE_INFO());
 		}
 
-		TEST_METHOD(KValue1)
+		TEST_METHOD(TKValue1)
 		{
 			struct student students[3] = { { "stud1", 50 }, { "stud2", 60 }, { "stud3", 70 } };
 			struct student **result = topKStudents(students, 3, 1);

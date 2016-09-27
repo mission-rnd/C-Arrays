@@ -10,7 +10,7 @@ namespace spec
 	{
 	public:
 
-		TEST_METHOD(inValidInputCheck)
+		TEST_METHOD(RADinValidInputCheck)
 		{
 			
 			int len = removeArrayDuplicates(NULL, 1);
@@ -22,7 +22,7 @@ namespace spec
 
 		}
 
-		TEST_METHOD(noDuplicates)
+		TEST_METHOD(RADnoDuplicates)
 		{
 			int Arr[3] = { 1, 2, 3 };
 			int len=removeArrayDuplicates(Arr, 3);
@@ -32,7 +32,7 @@ namespace spec
 			Assert::AreEqual(3, Arr[2], L"Value at index 2 should be 3", LINE_INFO());
 		}
 
-		TEST_METHOD(unSortedArray)
+		TEST_METHOD(RADunSortedArray)
 		{
 			int Arr[7] = { 1, 2, 3, 1, 2, 3, 4 };
 			int len=removeArrayDuplicates(Arr, 7);
@@ -43,7 +43,7 @@ namespace spec
 			Assert::AreEqual(4, Arr[3], L"Value at index 3 should be 4", LINE_INFO());
 		}
 
-		TEST_METHOD(sortedArray)
+		TEST_METHOD(RADsortedArray)
 		{
 			int Arr[6] = { 1, 1, 2, 2, 3, 3 };
 			int len=removeArrayDuplicates(Arr, 6);

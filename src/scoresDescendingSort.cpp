@@ -10,7 +10,7 @@ OUTPUT: Sort the array in descending order of scores.
 
 ERROR CASES: Return NULL for invalid Inputs.
 
-NOTES:
+Problem Code :SD
 */
 
 #include <stdio.h>

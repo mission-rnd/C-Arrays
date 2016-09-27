@@ -21,7 +21,7 @@ namespace spec
 			return Arr;
 		}
 
-		TEST_METHOD(inValidInputCheck)
+		TEST_METHOD(SAINinValidInputCheck)
 		{
 			
 			Assert::IsNull(sortedArrayInsertNumber(NULL, 1, 1), L"Array NULL check failed.", LINE_INFO());
@@ -29,21 +29,21 @@ namespace spec
 			Assert::IsNull(sortedArrayInsertNumber(Arr1, -2, 1), L"Length less than zero check failed.", LINE_INFO());
 		}
 
-		TEST_METHOD(insertAtFirstIndex)
+		TEST_METHOD(SAINinsertAtFirstIndex)
 		{
 			int *Arr = createArray();
 			Arr = sortedArrayInsertNumber(Arr, 5, 1);
 			Assert::AreEqual(1, Arr[0], L"0th index value should be 1", LINE_INFO());
 		}
 
-		TEST_METHOD(insertAtLastIndex)
+		TEST_METHOD(SAINinsertAtLastIndex)
 		{
 			int *Arr = createArray();
 			Arr = sortedArrayInsertNumber(Arr, 5, 12);
 			Assert::AreEqual(12, Arr[5], L"5th index value should be 12", LINE_INFO());
 		}
 
-		TEST_METHOD(insertAtMiddleIndices)
+		TEST_METHOD(SAINinsertAtMiddleIndices)
 		{
 			int *Arr = createArray();
 			Arr = sortedArrayInsertNumber(Arr, 5, 5);

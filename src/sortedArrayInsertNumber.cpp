@@ -8,7 +8,9 @@ OUTPUT: Array pointer after inserting number.
 
 ERROR CASES: Return NULL for invalid inputs.
 
-NOTES: Use realloc to allocate memory.
+NOTES: Use memory allocation techniques to allocate memory.
+
+ProblemCode :SAIN
 */
 
 #include <stdio.h>

@@ -11,6 +11,8 @@ OUTPUT: Update lessCount and moreCount with number of students less than and mor
 ERROR CASES: Return NULL for invalid inputs.
 
 NOTES:
+
+Problem Code :SC
 */
 
 #include <stdio.h>
